@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=" stylesheet" href="Style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>SkyVue</title>
+  </head>
+  <body>
+    <div class="container my-5 mx-auto " style="max-width: 500px  ">
+      <h1 class=" text-center my-4">SkyVue</h1>
+      <form class="change-location my-4 text-center text-muted">
+        <label for="city">Enter a location for weather information</label>
+        <input type="text" name="city" class="form-control my-4" p-4 />
+      </form>
+   
+      <div class="card shadow-lg rounded d-none">
+        <img src="https://placehold.co/400x300" class="time card-img-top" />
+        <div class="icon bg-light mx-auto text-center">
+          <img src="" alt="" />
+          <!-- icon -->
+        </div>
+        <div class="text-muted text-uppercase text-center details">
+          <h5 class="my-3">City Name</h5>
+          <div class="my-3">Weather condition</div>
+          <div class="display-4 my-4">
+            <span>temp</span>
+            <span>&deg;C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="./Script/config.js"></script>
+    <script src="./Script/Forecast.js"></script>
+    <script src="./Script/App.js"></script>
+  </body>
+</html>
